@@ -14,12 +14,12 @@ if %errorLevel% == 0 (
 pushd %~dp0
 
 ::make default config
-if not(exist config.ini) do (
+if not(exist Config.ini) do (
 	call MakeDefaultConfig.bat
 )
 
 ::Find variables in config.ini
-for /f "tokens=1,2 delims==" %%g in (config.ini) do (
+for /f "tokens=1,2 delims==" %%g in (Config.ini) do (
 	if %%g==ProjectFolder set ProjectFolder=%%h
 )
 

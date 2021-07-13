@@ -4,4 +4,5 @@ copy nul config.ini
 (
 echo ProjectFolder=FSD
 echo ContentFolder=NA
-) > config.ini
+echo C:\Program Files (x86)\UE_4.25\Engine\Binaries\Win64
+) > Config.ini
