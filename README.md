@@ -1,5 +1,5 @@
-# DRGLibModTemplate
-Much like the regular mod template, but includes DRGLib pre-configured
+# DRGLibFullSourceModTemplate
+This repo includes a submodule for DRGLib, so that it automatically includes the full source of DRGLib. This does mean you may have extra clutter, so if you'd prefer a cleaner approach, check out [the DRGLib devkit](https://github.com/SamsDRGMods/DRGLibDevkitFiles)
 
 ## Using this template
 1. Clone the repository/create your own repo using this as a template(And clone)
