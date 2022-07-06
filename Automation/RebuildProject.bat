@@ -13,29 +13,15 @@ if %errorLevel% == 0 (
 :: change the current directory to the bat location
 pushd %~dp0
 
-::make default config
-if not(exist Config.ini) do (
-	call MakeDefaultConfig.bat
-)
-
-::Find variables in config.ini
-for /f "tokens=1,2 delims==" %%g in (Config.ini) do (
-	if %%g==ProjectFolder set ProjectFolder=%%h
-)
+call UtilityBats/MakeDefaultConfigFiles.bat --noPause
+call UtilityBats/LoadVars.bat
+call UtilityBats/VerifyVars.bat --noPause
 
 pushd "%cd%\.."
 
-::verify project folder exists
-if exist "%ProjectFolder%\" (
-	echo found project folder
-) else (
-	echo unable to find project folder "%ProjectFolder%\". Please edit config.ini
-	pause
-	exit
-)
-
 echo downloading submodules
-git submodule update --init
+git submodule init
+git submodule update --remote
 
 echo making symbolic link
 rmdir "%ProjectFolder%\Content\DRGLib"
