@@ -26,6 +26,6 @@ git submodule update --remote
 echo making symbolic link
 rmdir "%ProjectFolder%\Content\DRGLib"
 del "%ProjectFolder%\Content\DRGLib"
-mklink /d "%ProjectFolder%\Content\DRGLib" "%cd%\DRGLibModule\DRGLib UE project\Content\DRGLib"
+mklink /d "%ProjectFolder%\Content\DRGLib" "..\..\DRGLibModule\DRGLib UE project\Content\DRGLib"
 
 pause
