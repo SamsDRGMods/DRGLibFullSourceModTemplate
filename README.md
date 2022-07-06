@@ -10,4 +10,4 @@ It is based off of the [FSD template](https://github.com/DRG-Modding/FSD-Templat
 
 You've successfully setup your project to use DRGLib! If you need to update your project to a newer version of DRGLib, just run Automation/UpdateModules.bat . I'll do my best to keep DRGLib backwards compatible, but I am mearly a mortal dwarf. Updating should usually only be needed if you want to access a new feature of DRGLib. 
 
-[^1] Ok so that's not *technically* true if you have permissions to commit straight to DRGLib's repo, but you don't so boo hoo for you
+[^1]: Ok so that's not *technically* true if you have permissions to commit straight to DRGLib's repo, but you don't so boo hoo for you
